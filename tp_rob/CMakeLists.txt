@@ -42,6 +42,7 @@ add_executable(publisher_motor src/publisher_motor.cpp)
 target_link_libraries(publisher_motor ${catkin_LIBRARIES})
 add_dependencies(publisher_motor ${PROJECT_NAME}_generate_messages_cpp)
 
+# TP2
 add_executable(get_motor_data_client src/service_client_motor.cpp)
 target_link_libraries(get_motor_data_client ${catkin_LIBRARIES})
 add_dependencies(get_motor_data_client ${PROJECT_NAME}_generate_messages_cpp)
