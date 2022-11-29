@@ -50,3 +50,8 @@ add_dependencies(get_motor_data_client ${PROJECT_NAME}_generate_messages_cpp)
 add_executable(one_dof_robot src/one_dof_robot.cpp)
 target_link_libraries(one_dof_robot ${catkin_LIBRARIES})
 add_dependencies(one_dof_robot ${PROJECT_NAME}_generate_messages_cpp)
+
+# TP4
+add_executable(turtlesim_controller src/turtlesim_controller.cpp)
+target_link_libraries(turtlesim_controller ${catkin_LIBRARIES})
+add_dependencies(turtlesim_controller ${PROJECT_NAME}_generate_messages_cpp)
